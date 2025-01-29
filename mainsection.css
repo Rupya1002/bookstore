@@ -1,0 +1,184 @@
+
+.group{
+  width: 100%;
+  padding-top: 40px;
+  
+  display:flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: stretch;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.fic{
+ color: rgb(66, 64, 64);
+  font-size: 30px;
+  font-weight: bold;
+  
+  padding-top: 100px;
+  text-align: center;
+  flex-grow: 1;
+  z-index: 100000;
+  text-decoration: underline;
+ 
+}
+.icon{
+  margin-right: 2px;
+}
+.name{
+  font-size: 30px;
+  font-weight: bold;
+  color:rgb(66, 64, 64);
+  padding-top: 40px;
+  text-align: center;
+  flex-grow: 1;
+  z-index: 100000;
+  text-decoration: underline;
+ 
+}
+.group::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+
+}
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+
+.book{
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  box-shadow: 1px 2px 2px #ccc;
+  transition: 0.5s;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  align-items: center;
+}
+img{
+  width:75%;
+ height: 65%;
+  object-fit: cover;
+ 
+}
+.wishlist {
+  position: absolute;
+  top: -60px;
+  right: 16px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.7;
+  
+}
+.wishlist:hover{
+  
+  opacity: 1;
+}
+
+
+
+.book {
+  position: relative;
+}
+
+
+
+.book:hover{
+  background-color: #f1f1f1;
+  box-shadow:0px 0px 10px black ;
+}
+.bookname{
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-wrap: wrap;
+  text-align: center;
+  flex-grow: 1;
+}
+.author{
+  font-size: 15px;
+  color: #666;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.price{
+  font-size: 15px;
+  color: #333;
+  flex-grow: 1;
+}
+.buy{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  flex-wrap: wrap;
+  border-radius:10px ;
+
+}
+
+.buy:hover{
+  background-color: rgb(66, 64, 64);
+}
+
+.read{
+  background-color: black;
+
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: block;
+  flex-wrap: wrap;
+  border-radius:10px ;
+}
+
+.read:hover{
+  background-color: rgb(77, 73, 73);
+}
+@media screen and (max-width: 900px){
+  .add{
+    display: block;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+    width: fit-content;
+  }
+  .buy{
+    margin: auto;
+    padding: auto;
+    display: block;
+    width:fit-content ;
+  }
+  .read{
+    margin: auto;
+    padding: auto;
+    display: block;
+   width: fit-content;
+  }
+}
+@media screen and (max-width:600px) {
+
+  
+}

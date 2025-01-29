@@ -179,7 +179,8 @@ html{
 .homedrop {
 
   overflow: hidden;
-  display: inline-block;
+  display: none;
+  
   margin-left: 3px;
 }
 

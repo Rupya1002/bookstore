@@ -3,12 +3,9 @@
   color: white;
   display: flex;
   justify-content: space-around;
- 
   margin-top: 50px;
   padding-top: 40px;
   padding-bottom: 30px;
-  
-  
 }
 .shop , .part2{
   color: black;
@@ -38,14 +35,14 @@
   font-size: clamp(15px,1.5vw,500px);
   padding-bottom:5px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
   .part1{
     display: none;
     width: 0;
   }
   .footer{
-    flex-direction: column;
-   text-align: center;
+  flex-direction: column;
+  text-align: center;
   }
  
   

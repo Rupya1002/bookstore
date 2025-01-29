@@ -177,9 +177,49 @@ html{
 
 }
 .homedrop {
-  float: left;
+
   overflow: hidden;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.homedrop .symbol {
+  cursor: pointer;
+  font-size: clamp(18px, 1.4vw, 22px);
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.homedrop-content {
   display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.homedrop-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.homedrop-content a:hover {
+  background-color: #ddd;
+}
+
+.homedrop:hover .homedrop-content {
+  display: block;
 }
 .homedrop .symbol {
   cursor: pointer;
@@ -273,3 +313,4 @@ html{
     }
   
  }
+

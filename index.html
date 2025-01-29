@@ -18,7 +18,6 @@
                  <div class="homedrop-content" id="home">
                    <a href="#">Sign in</a>
                    <a href="#">Sign up</a>
-                   <a href="#">Link 3</a>
                  </div>
               </div>
                
@@ -3575,10 +3574,10 @@
    <script>
       function myFunction() {
          document.getElementById("mycategories").classList.toggle("show");
-       }
+      }
        
        
-       window.onclick = function(e) {
+      window.onclick = function(e) {
          if (!e.target.matches('.dropbtn')) {
          var mycategories = document.getElementById("mycategories");
            if (mycategories.classList.contains('show')) {
@@ -3586,16 +3585,14 @@
            }
          }
        }
-    </script> 
-    <script>
       function toggleHomecategories() {
-         document.getElementById("home").classList.toggle("seen");
+         document.getElementById("home").classList.toggle("show");
        } 
        window.onclick = function(e) {
          if (!e.target.matches('.symbol')) {
          var home = document.getElementById("home");
-           if (home.classList.contains('seen')) {
-             home.classList.remove('seen');
+           if (home.classList.contains('show')) {
+             home.classList.remove('show');
            }
          }
        }

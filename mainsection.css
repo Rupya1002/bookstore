@@ -43,15 +43,16 @@
 
 }
 .buttons{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-
+ 
+  justify-content: center;
 }
 
 
 .book{
-  min-width: 300px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   vertical-align: top;
@@ -127,7 +128,7 @@ img{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px 10px;
   cursor: pointer;
   flex-wrap: wrap;
   border-radius:10px ;
@@ -158,22 +159,18 @@ img{
   background-color: rgb(77, 73, 73);
 }
 @media screen and (max-width: 900px){
-  .add{
-    display: block;
-    margin: auto;
-    padding: auto;
-    overflow: hidden;
-    width: fit-content;
-  }
+  
   .buy{
-    margin: auto;
-    padding: auto;
+
+    padding-left: 6px;
+    padding-right:6px ;
     display: block;
     width:fit-content ;
+    
   }
   .read{
-    margin: auto;
-    padding: auto;
+    padding-left: 6px;
+    padding-right:6px ;
     display: block;
    width: fit-content;
   }

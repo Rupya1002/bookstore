@@ -12,20 +12,22 @@
   padding-bottom: 10px;
   padding-top: 5px;
   margin-bottom: 200px;
-  
+}
+.helloworld{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .categories {
   float: left;
   overflow: hidden;
+  border-radius: 3px;
   
-  margin-left:3px ;
+ 
 }
 .cat{
   display: inline-block;
   font-size: 20px;
- 
-
-  
 }
 
 
@@ -35,25 +37,29 @@
   border: none;
   outline: none;
   color: white;
- 
   background-color: inherit;
   margin: 0;
   display: inline-flex;
   flex-direction: row;
   align-items:center;
-}
+  padding-left :8px; 
+  padding-right: 8px;
 
+}
+.categories .dropbtn {
+  display: block ;
+}
  .dropbtn:hover ,.about:hover,.contact:hover{
   color: rgb(66, 64, 64);
   background-color: white;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left:5px;
-  padding-right: 5px;
+ padding-bottom:4px ;
+ padding-top: 4px;
  
+
 }
 .cat:hover,.cat:active{
-  padding-left: 10px;
+
+  border-radius: 3px;
 }
 .categories-content {
   display: none;
@@ -62,6 +68,8 @@
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-size: 17px;
+ 
 }
 
 .categories-content a {
@@ -124,6 +132,7 @@ html{
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  margin-left:35px ;
 }
 .searchbox {
   margin-right: 10px;
@@ -169,8 +178,9 @@ html{
 }
 .about:hover,.contact:hover{
  
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 3px;
 }
 .icon{
   color: white;
@@ -184,18 +194,7 @@ html{
   margin-left: 3px;
 }
 
-.homedrop .symbol {
-  cursor: pointer;
-  font-size: clamp(18px, 1.4vw, 22px);
-  border: none;
-  outline: none;
-  color: white;
-  background-color: inherit;
-  margin: 0;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-}
+
 
 .homedrop-content {
   display: none;
@@ -204,6 +203,7 @@ html{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-size:17px ;
 }
 
 .homedrop-content a {
@@ -264,47 +264,29 @@ html{
 .seen {
   display: block;
 }
-@media screen  and (max-width: 600px) {
-  .homedrop {
-    display: block;
-    padding: 10px 10px;
-  }
-
-  .icon{
-    display: none;
-  }
-  .categories{
-    padding: 10px 10px;
-    margin: 0px;
-  }
-
+@media screen  and (max-width: 600px) { 
+ 
   .searchbox{
     width: 100px;
   }
+  .categories .dropbtn{
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .cat{
+    font-size: 15px;
+  }
 }
 
-
-
-@media  screen and (max-width:600px){
-  .signin{
-    display: none;
-  }
-  .signup{
-    display: none;
-  }
- 
-  
-  
-}
-@media (max-width: 1080px) {
+@media screen and(max-width: 1080px) {
 
   .searchbox{
    width:275px;
   } 
   
  }
- 
- @media (max-width: 870px) {
+
+ @media screen and (max-width: 870px) {
    .searchbox{
      width: 50vw;
     } 
@@ -312,6 +294,33 @@ html{
       width: 0;
       display: none;
     }
+    .homedrop {
+      display: block;
+      padding: 10px 10px;
+    }
+    .left{
+      margin-left: 5px;
+    }
+    .icon{
+      display: none;
+    }
+    .categories{
+      
+      margin-right:8px ;
+    }
+    .signin{
+      display: none;
+    }
+    .signup{
+      display: none;
+    }
+    .helloworld{
+      flex-direction: row-reverse;
+    }
+    .categories-content{
+      font-size: 14px;
+    }
+  
   
  }
 
